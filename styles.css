@@ -1,0 +1,361 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS REST ---------------------------------------------------*/
+/* v2.0 | 20110126 | http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7; 
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57; 
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) -------------------- */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 0;
+    background-color: var(--purple); 
+}
+
+header {
+    background-color: #6B8FE7; 
+    color: var(--white);
+    padding: 20px;
+    max-width: 1920px;
+    margin: 20px; 
+    border-radius: 0 0 20px 20px; 
+    position: relative;
+    bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index:1;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.header-p {
+    background-color: #D9526F; 
+    color: var(--white);
+    padding: 10px;
+    position: relative;
+    bottom: 80px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Kavoon', serif;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'Kavoon', serif;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #E9BB57;
+    font-weight:bold;
+}
+
+h4 {
+    font-size: 1.15em;
+    color: #484FB7;
+    font-weight: bold;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+.nav-bar {
+    background-color: var(--yellow); 
+    padding: 10px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: var(--dark-gray); 
+}
+
+
+section {
+    margin: 20px; 
+    padding: 40px; 
+    border-radius: 8px; 
+}
+
+
+article {
+    border: 1px solid var(--lavender); 
+    padding: 20px; 
+    margin-top: 10px;
+    border-radius: 12px; 
+    background-color: var(--white); 
+}
+
+p {
+  padding: 10px;
+  line-height: 25px;
+}
+
+
+.service-container, .pricing-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 1px;
+    margin: 10px 60px;
+}
+
+.service, .pricing-table {
+    flex: 1; 
+    min-width: 200px; 
+    max-width: 300px; 
+}
+
+article {
+    border: 1px solid var(--lavender);
+    padding: 20px; 
+    margin-top: 10px;
+    border-radius: 12px; 
+    background-color: var(--white); 
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 1em 0; 
+    border: 2px solid var(--yellow); 
+    background-color: white;
+}
+
+th {
+    background-color: var(--yellow); 
+    color: var(--dark-gray);
+    padding: 10px; 
+}
+
+th, td {
+    border: 1px solid var(--yellow); 
+    padding: 10px;
+    text-align: left; 
+}
+
+section#why-choose-us {
+  background-color: #D9526F;
+}
+
+section#why-choose-us ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+.list-item { 
+    color: var(--black); 
+    padding: 40px 25px; 
+    margin-top: 20px;
+    border-radius: 10px; 
+    font-weight: bold; 
+    flex: 1; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.item1 {
+  background-color: #4CA7C0;
+}
+
+.item2 {
+  background-color: #6B8FE7;
+}
+
+.item3 {
+  background-color: #E9BB57;
+}
+
+.item4 {
+  background-color: #ffffff; 
+}
+
+button.schedule-now {
+    background-color: white; 
+    color: #000000; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 20px 50px; 
+    border: none; 
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    transition: all 0.3s ease; 
+    position: absolute; 
+    right: 20px; 
+    bottom: 20px; 
+    z-index: 1; 
+}
+
+
+button.schedule-now:hover {
+    background-color: #f0f0f0; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+
+
+button.schedule-now:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+    transform: scale(0.98); 
+}
+
+section#take-first-step {
+    position: relative;
+    padding: 40px; 
+    background-color: #E96479;
+    color: white; 
+    border-radius: 8px 0px 0px 0px;  
+    margin: 20px auto; 
+    margin-bottom: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+section#take-first-step h2 {
+    font-size: 32px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+section#take-first-step p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    text-align: left;
+    color: #ffffff; 
+    margin-bottom: 0; 
+}
+
+footer {
+    background-color: #6B8FE7; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    font-size: 14px; 
+    border-radius: 0 0 15px 15px; 
+    position: relative; 
+    gap: 50px;
+}
+
+footer p, footer a {
+    color: #F0EFFF;
+    margin-left: 0px; 
+}
+
+
+/* -------------------- MEDIA QUERY (medium) -------------------------------- */
+@media (min-width: 620px) {
+    h1 {
+        font-size: 3.5em; 
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .service-container,
+    .pricing-container {
+        flex-direction: row;
+    }
+}
+
+/* -------------------- MEDIA QUERY (large) ------------------------------------ */
+@media (min-width: 950px) {
+    body {
+        padding: 20px; 
+    }
+}
+/* -------------------- MEDIA QUERY (xl) --------------------------------------- */
+@media (min-width: 1280px) {
+    header {
+        text-align: left; 
+    }
+}
